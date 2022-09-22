@@ -1,0 +1,17 @@
+/* Permet de définir la taille de l'incrustation youtube en fonction de l'écran de l'utilisateur */
+
+iframe {
+    width: 65vw;
+    height: 37vw;
+}
+
+
+/* Permet de centrer l'incrustation YouTube sur la page et d'ajouter de l'espace au dessus et en dessous */
+
+.flexYT {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}

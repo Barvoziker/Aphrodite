@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* Contenu du Caroussel */
+
+.slideshow-container {
+    max-width: 35vh;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Les images sont cachés par défauts */
+
+.Myslides {
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Apparence des boutons précédent/suivant */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position du bouton suivant à droite */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Ajout d'un fond noir transparent sur les boutons au survol de la souris */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Apparence des boutons */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Animation d'apparition des images */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+
+/* Option de l'opacité du fondu des images */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*ligne de date pour la frise*/
+
+.defil_date {
+    display: none;
+}

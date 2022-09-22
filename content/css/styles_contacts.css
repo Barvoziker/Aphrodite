@@ -1,0 +1,36 @@
+.contactContainer {
+    display: table;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.label,
+input,
+select,
+textarea {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+.label {
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.contactContent {
+    display: table-row;
+    color: rgb(255, 255, 255, 0.9);
+    font-family: sans-serif;
+    line-height: 150%;
+}
+
+.legendForm {
+    font-family: sans-serif;
+    color: grey;
+    padding-left: 11%;
+    padding-right: 9%;
+    font-size: 85%;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 60%;
+}

@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+
+/*Mise en page du body, permet de régler la couleur de fond et la taille du body*/
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+}
+
+
+/* Début de la mise en page du header*/
+
+
+/*Permet de mettre en place les éléments du header, de définir sa couleur, sa taille, de le fixer en haut de l'écran
+     et d'arrondir les bords*/
+
+#headerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(112, 4, 4, 0.911);
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    font-family: 'Darker Grotesque', sans-serif;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+/*Permet de définir la couleur et la taille du texte dans le header*/
+
+.headerEnfant {
+    color: white;
+    font-size: 2vw;
+}
+
+
+/*Permet de définir la couleur et la taille du nom de la page où on se trouve dans le header et de le souligner*/
+
+.pageActuelle {
+    text-decoration: underline;
+    color: white;
+    font-size: 2vw;
+}
+
+
+/*Permet de centrer le texte dans les différentes portions du header, Ajoute un séparateur entre les portions du header*/
+
+.separateur {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+
+/*Permet de centrer le texte dans les différentes portions du header, n'ajoute un séparateur après la dernière portion du header*/
+
+.separateurFin {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Permet de régler la largeur des portions du header*/
+
+.highlight {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.666%;
+}
+
+
+/*Permet de changer la couleur des portions du header quand la souris les survole*/
+
+.highlight:hover {
+    background-color: #470000e5;
+}
+
+
+/*Permet de régler la largeur de la dernière portion du header*/
+
+.highlightFin {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.666%;
+}
+
+
+/*Permet de changer la couleur de la dernière portion du header quand la souris la survole, en épousant la courbure de header*/
+
+.highlightFin:hover {
+    border-bottom-right-radius: 25px;
+    background-color: #470000e5;
+}
+
+
+/*Permet de changer la couleur de la première portion du header quand la souris la survole, en épousant la courbure de header*/
+
+.highlightDebut:hover {
+    border-bottom-left-radius: 25px;
+    background-color: #470000e5;
+}
+
+
+/*Permet de régler la largeur de la première portion du header*/
+
+.highlightDebut {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.666%;
+}
+
+
+/*Permet de ne pas souligner ou changer la couleur des liens*/
+
+a {
+    text-decoration: none;
+}
+
+
+/* Fin de la mise en page du header*/
+
+
+/* Mise en page des images*/
+
+
+/*Permet d'afficher les images en petit*/
+
+.imgMini {
+    width: 8vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Permet de centrer les images et de les espacer de façon égale */
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.side_view img {
+    width: 9rem;
+    height: 7rem;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+
+/* Fin de la mise en page des images*/
+
+
+/* Définit la largeur et la couleur de la zone dédiée au contenu */
+
+.zoneTexte {
+    width: 80%;
+    min-height: 91vh;
+    background-color: #570000;
+    margin: 0 auto;
+    padding-top: 9vh;
+}
+
+
+/*Permet de définir la police d'écriture et la couleur utilisée pour le texte du site (hors titres)*/
+
+.texteContenu {
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 150%;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 3%;
+}
+
+li {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+
+/*Permet de définir la police d'écriture et la couleur utilisée pour les titres*/
+
+h1 {
+    color: rgba(253, 231, 204, 0.9);
+    font-family: 'Lora', serif;
+    padding-left: 3%;
+    line-height: 150%;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 150%;
+    font-size: 18pt;
+}
+
+
+/* Debut de la mise en page du footer */
+
+
+/*Permet de définir la taille et la couleur du footer*/
+
+.footer {
+    height: 15vh;
+    max-height: 150px;
+    width: 80%;
+    background-color: #470101ee;
+    margin: auto;
+    border-top: 2px solid #1a1919d7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*Permet de centrer le contenu footer verticalement*/
+
+.footerTexte {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Permet de définir la hauteur et la hauteur max des étiquettes "liens" et "contact" */
+
+.etiquette {
+    height: 13vh;
+    max-height: 130px;
+}
+
+.lien {
+    color: white;
+    font-size: 22pt;
+}
+
+#sidebarMenu,
+#openSidebarMenu {
+    display: none;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    MEDIA QUERRY
+    Cette mediaQuerry permet de detecter la taille de l'écran et apporte des modification au site lorsque l'écran devient plus petit que 768 pixels de largeur
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:768px) {
+    #bandeau {
+        display: none;
+    }
+    .zoneTexte {
+        padding-top: 1vh;
+    }
+    .footer {
+        display: none;
+    }
+    .imgMini {
+        width: 12vw;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #headerContainer {
+        display: none;
+    }
+    #sidebarMenu {
+        z-index: 1;
+        display: block;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        width: 250px;
+        margin-top: 0;
+        transform: translateX(-250px);
+        transition: transform 250ms ease-in-out;
+        background: rgba(0, 0, 0, 0.877);
+    }
+    .sidebarMenuInner {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    .sidebarMenuInner li {
+        text-align: center;
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+    .sidebarMenuInner li a {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    input[type="checkbox"]:checked~#sidebarMenu {
+        transform: translateX(0);
+    }
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: fixed;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 22px;
+        left: 15px;
+        height: 22px;
+        width: 22px;
+    }
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
+    h3 {
+        font-size: 14pt;
+    }
+}

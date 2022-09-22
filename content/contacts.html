@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles_contacts.css ">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>PIERRE LOUŸS <span>Auteur Français</span></li>
+            <li><a href="./accueil.html">Accueil</a></li>
+            <li><a href="./ses_amis.html">Ses amis</a></li>
+            <li><a href="./ses_amours.html">Ses amours</a></li>
+            <li><a href="./sa_vie.html">Sa vie</a></li>
+            <li><a href="./ses_voyages.html">Ses voyages</a></li>
+            <li><a href="./ses_oeuvres.html">Ses œuvres</a></li>
+            <li><a href="./liens.html">Liens</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!--Le header va permettre de naviguer sur le site-->
+    <header>
+        <div id=headerContainer>
+
+            <a class="highlightDebut" href="./accueil.html">
+                <div class=separateur>
+
+                    <div class=headerEnfant>Accueil</div>
+
+                </div>
+            </a>
+
+
+            <a class="highlight" href="./ses_amis.html">
+                <div class=separateur>
+
+                    <div class=headerEnfant>Ses amis</div>
+
+                </div>
+            </a>
+
+
+            <a class="highlight" href="./ses_amours.html">
+                <div class=separateur>
+
+                    <div class=headerEnfant>Ses amours</div>
+
+                </div>
+            </a>
+
+
+            <a class="highlight" href="./sa_vie.html">
+                <div class=separateur>
+
+                    <div class=headerEnfant>Sa vie</div>
+
+                </div>
+            </a>
+
+            <a class="highlight" href="./ses_voyages.html">
+                <div class=separateur>
+
+                    <div class=headerEnfant>Ses voyages</div>
+
+                </div>
+            </a>
+
+            <a class="highlightFin" href="./ses_oeuvres.html">
+                <div class=separateurFin>
+
+                    <div class=headerEnfant>Ses oeuvres</div>
+
+                </div>
+            </a>
+
+        </div>
+    </header>
+    <!--Fin du header-->
+    <div class='zoneTexte'>
+
+        <img src="images/Banniere.jpg" id="bandeau" style="width: 100%;">
+
+        <h1>Contact</h1>
+
+        <p class=texteContenu>N’hésitez pas à nous faire parvenir vos commentaires ou suggestions !</p>
+
+        <p class=texteContenu>Formulaire de contact :</p>
+
+        <form class="contactContainer" action="mailto:barvoziker@gmail.com" method="post" enctype="text/plain">
+            <div class="contactContent">
+                <label for="Nom " class="label">Votre nom * </label>
+                <input type="text" name="Nom " id="Nom " required>
+            </div>
+            <div class="contactContent">
+                <label for="Telephone " class="label">Votre numéro de téléphone </label>
+                <input type="text" name="Telephone " id="Telephone ">
+            </div>
+            <div class="contactContent">
+                <label for="Email " class="label">Votre adresse mail * </label>
+                <input type="Email " name="Email " id="Email " required>
+            </div>
+            <div class="contactContent">
+                <label for="Metier " class="label">Vous êtes * </label>
+                <select name="Metier " id="Metier " required>
+                    <option value="">--Choisissez une option--</option>
+                    <option>Etudiant</option>
+                    <option>Enseignant</option>
+                    <option>Journaliste</option>
+                    <option>Autre (merci de préciser)</option>
+                </select>
+            </div>
+            <div class="contactContent">
+                <label for="Demande " class="label">Précisez votre demande </label>
+                <textarea type="text" name="Demande " id="Demande " rows=8 cols=20>
+                </textarea>
+            </div>
+            <div class="contactContent">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+        <p class=legendForm>* champs obligatoires </p>
+        <p class=texteContenu>Merci et à bientôt !</p>
+        <br>
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="footerTexte">
+            <a class="lien" href="./liens.html">
+                <img class="etiquette" src="./images/Etiquettes-pierre-louys-liens.png">
+            </a>
+        </div>
+
+        <div class="footerTexte">
+            <a class="lien" href="./contacts.html">
+                <img class="etiquette" src="./images/Etiquettes-pierre-louys-contact.png">
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+</html>
